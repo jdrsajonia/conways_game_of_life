@@ -1,6 +1,8 @@
 # Conway's Game of Life 🎮
 
-![Game of Life Screenshot](./screenshot.png)
+<p align="center">
+    <img src="img/conway.gif" width='480' />
+</p>
 
 Implementation of John Conway's classic cellular automaton in **C++** and **Python**.
 
