@@ -2,37 +2,43 @@
 
 ![Game of Life Screenshot](./screenshot.png)
 
-Implementación del autómata celular clásico de John Conway en **C++** y **Python**.
+Implementation of John Conway's classic cellular automaton in **C++** and **Python**.
 
-## ¿Qué es?
+## What is it?
 
-Un "juego" basado en 4 reglas simples que generan patrones complejos:
-- Una célula viva con 2-3 vecinos sobrevive
-- Una célula muerta con exactamente 3 vecinos nace
-- En cualquier otro caso, muere o permanece muerta
+A "game" based on 4 simple rules that generate complex patterns:
+- A live cell with 2-3 live neighbors survives
+- A dead cell with exactly 3 live neighbors is reborn
+- A live cell with fewer than 2 live neighbors dies (underpopulation)
+- A live cell with more than 3 live neighbors dies (overpopulation)
 
-## C++ (Versión interactiva)
+## C++ (Interactive Version)
 
-Implementación completa con controles en tiempo real.
+Complete implementation with real-time controls.
 
-### Compilación y uso:
+### Compilation and usage:
 ```bash
 make
 ./conway <cols> <rows>
-# Ejemplo: ./conway 100 40
+# Example: ./conway 100 40
 ```
 
-### Controles:
-- `+/-` → Velocidad
-- `p` → Pausa
-- `w` → Activar bordes envolventes
-- `r` → Reiniciar
-- `q` → Salir
+### Controls:
+- `+/-` → Speed
+- `p` → Pause
+- `w` → Toggle wrapping edges
+- `r` → Restart
+- `q` → Quit
 
-## Python (Versión educativa)
+## Python (Educational Version)
 
-Código simplificado **sin controles interactivos** para entender la lógica sin complejidad de threading/entrada de datos. Perfecto para aprender los algoritmos base.
+Simplified code **without interactive controls** to understand the logic without threading/input complexity. Perfect for learning the base algorithms.
 
-## Propósito académico
+### Usage:
+```python
+python3 conway.py
+```
 
-Comparar implementaciones y entender cómo los mismos algoritmos se adaptan según el lenguaje y requisitos.
+## Academic Purpose
+
+Compare implementations and understand how the same algorithms adapt based on language and requirements.
